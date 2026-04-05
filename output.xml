@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.7 on win32)" generated="2026-03-18T15:28:31.961093" rpa="false" schemaversion="5">
+<suite id="s1" name="TC1" source="C:\HUyen\ROBOT\Robot1\TestCases\TC1.robot">
+<test id="s1-t1" name="LoginTest" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-18T15:28:32.203129" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<msg time="2026-03-18T15:32:33.083530" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-03-18T15:32:33.083773" level="FAIL">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</msg>
+<arg>https://demo.nopcommerce.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-03-18T15:28:32.202918" elapsed="240.891395">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>xpath://a[@class='ico-login']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-18T15:32:33.094724" elapsed="0.000053"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>pavanoltraining@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-18T15:32:33.094953" elapsed="0.000030"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>Test@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-18T15:32:33.095126" elapsed="0.000027"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://button[@class='button-1 login-button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-18T15:32:33.095394" elapsed="0.000036"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-03-18T15:32:33.095595" elapsed="0.000029"/>
+</kw>
+<status status="FAIL" start="2026-03-18T15:28:32.201982" elapsed="240.893895">NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<status status="FAIL" start="2026-03-18T15:28:31.962982" elapsed="241.133467"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TC1" id="s1" pass="0" fail="1" skip="0">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
